@@ -35,6 +35,7 @@
             this.cmdUsingStatic = new System.Windows.Forms.Button();
             this.cmdExprBodied = new System.Windows.Forms.Button();
             this.cmdIndexInit = new System.Windows.Forms.Button();
+            this.cmdNullConditional = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmdStringInter
@@ -107,11 +108,22 @@
             this.cmdIndexInit.UseVisualStyleBackColor = true;
             this.cmdIndexInit.Click += new System.EventHandler(this.cmdIndexInit_Click);
             // 
+            // cmdNullConditional
+            // 
+            this.cmdNullConditional.Location = new System.Drawing.Point(200, 88);
+            this.cmdNullConditional.Name = "cmdNullConditional";
+            this.cmdNullConditional.Size = new System.Drawing.Size(73, 41);
+            this.cmdNullConditional.TabIndex = 7;
+            this.cmdNullConditional.Text = "null conditional";
+            this.cmdNullConditional.UseVisualStyleBackColor = true;
+            this.cmdNullConditional.Click += new System.EventHandler(this.cmdNullConditional_Click);
+            // 
             // C6_Samples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(520, 347);
+            this.Controls.Add(this.cmdNullConditional);
             this.Controls.Add(this.cmdIndexInit);
             this.Controls.Add(this.cmdExprBodied);
             this.Controls.Add(this.cmdUsingStatic);
@@ -134,5 +146,6 @@
         private System.Windows.Forms.Button cmdUsingStatic;
         private System.Windows.Forms.Button cmdExprBodied;
         private System.Windows.Forms.Button cmdIndexInit;
+        private System.Windows.Forms.Button cmdNullConditional;
     }
 }

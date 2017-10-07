@@ -93,5 +93,15 @@ namespace WinFormsTest1
             };
             Console.WriteLine(HttpWebErrors[404]);
         }
+
+        private void cmdNullConditional_Click(object sender, EventArgs e)
+        {
+            string name = null;
+
+            if (name?.Length > 0)
+                Console.WriteLine(name.Length);
+            else
+                Console.WriteLine("no value");
+        }
     }
 }
